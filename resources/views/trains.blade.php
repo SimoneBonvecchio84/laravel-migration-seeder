@@ -6,17 +6,39 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Azienda</th>
-                <th scope="col">Codice Treno</th>
-                <th scope="col">Immagine</th>
-                <th scope="col">Stazione Di Partenza</th>
-                <th scope="col">Stazione Di Arrivo</th>
-                <th scope="col">Orario Di Partenza</th>
-                <th scope="col">Orario Di Arrivo</th>
-                <th scope="col">Numero Carrozze</th>
-                <th scope="col">In orario</th>
-                <th scope="col">cancellato</th>
+                <th scope="col">
+                  <h3>Id</h3>  
+                </th>
+                <th scope="col">
+                  <h3>Azienda</h3>  
+                </th>
+                <th scope="col">
+                  <h3>Codice</h3>  
+                </th>
+                <th scope="col">
+                  <h3>Immagine</h3>  
+                </th>
+                <th scope="col">
+                    <h3>Partenza</h3> 
+                </th>
+                <th scope="col">
+                    <h3>Arrivo</h3> 
+                </th>
+                <th scope="col">
+                  <h3>Ora_Partenza</h3>  
+                </th>
+                <th scope="col">
+                   <h3>Ora_Arrivo</h3> 
+                </th>
+                <th scope="col">
+                  <h3>Carrozze</h3>  
+                </th>
+                <th scope="col">
+                   <h3>In_orario</h3> 
+                </th>
+                <th scope="col">
+                   <h3>Cancellato</h3> 
+                </th>
             </tr>
         </thead>
         @foreach ($lista_treni as $treno)
@@ -28,63 +50,62 @@
                         </h3>
                     </th>
                     <td>
-                        <h3>
+                        <h5>
                             {{ $treno->azienda }}
-                        </h3>
+                        </h5>
                     </td>
                     <td>
-                        <h3>
+                        <h5>
                             {{ $treno->codice_treno }}
-                        </h3>
+                        </h5>
                     </td>
                     
                     <td>
-                        <img class="w-25" src="{{ $treno->immagine_treno }}" alt="{{ $treno->azienda }}">
+                        <img class="w-100" src="{{ $treno->immagine_treno }}" alt="{{ $treno->azienda }}">
                     </td>
                     <td>
-                        <h4>
+                        <h5>
                            {{ $treno->stazione_di_partenza }} 
-                        </h4>
+                        </h5>
                     </td>
                     <td>
-                        <h4>
+                        <h5>
                             {{ $treno->stazione_di_arrivo }}
-                        </h4>
+                        </h5>
                     </td>
                     <td>
-                        <h4>
+                        <h5>
                             {{ $treno->orario_di_partenza }}
-                        </h4>
+                        </h5>
                     </td>
                     <td>
-                        <h4>
+                        <h5>
                             {{ $treno->orario_di_arrivo }}
-                        </h4>
+                        </h5>
+                    </td>
+                    <td>
+                        <h5>
+                            {{ $treno->numero_carrozze }}
+                        </h5>
                     </td>
                     <td>
                         <h4>
-                            {{ $treno->numero_carrozze }}
-                        </h4>
-                    </td>
-                    <td>
-                        <h3>
-                            
                             @if ($treno->in_orario === 1)
                                 Non ci sono Ritardi
                             @else
                                 Treno in ritardo
                             @endif
-                        </h3>
+                        </h4>
                     </td>
                     <td>
-                        <h3>
+                        <h4>
                             
                             @if ($treno->cancellato === 0)
                                 Corsa non cancellata
                             @else
                                 Corsa cancellata  
                             @endif
-                        </h3>
+                        </h4>
                     </td>
                 </tr>
             </tbody>
