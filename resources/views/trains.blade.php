@@ -3,41 +3,41 @@
 @section('content')
 
 <div class="container">
-    <table class="table">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col">
-                  <h3>|Id|</h3>  
+                  <h3>Id</h3>  
                 </th>
                 <th scope="col">
-                  <h3>|Azienda|</h3>  
+                  <h3>Azienda</h3>  
                 </th>
                 <th scope="col">
-                  <h3>|Codice|</h3>  
+                  <h3>Codice</h3>  
                 </th>
                 <th scope="col">
-                  <h3>|Immagine|</h3>  
+                  <h3>Immagine</h3>  
                 </th>
                 <th scope="col">
-                    <h3>|Partenza|</h3> 
+                    <h3>Partenza</h3> 
                 </th>
                 <th scope="col">
-                    <h3>|Arrivo|</h3> 
+                    <h3>Arrivo</h3> 
                 </th>
                 <th scope="col">
-                  <h3>|Ora_Partenza|</h3>  
+                  <h3>Ora_Partenza</h3>  
                 </th>
                 <th scope="col">
-                   <h3>|Ora_Arrivo|</h3> 
+                   <h3>Ora_Arrivo</h3> 
                 </th>
                 <th scope="col">
-                  <h3>|Carrozze|</h3>  
+                  <h3>Carrozze</h3>  
                 </th>
                 <th scope="col">
-                   <h3>|In_orario|</h3> 
+                   <h3>In_orario</h3> 
                 </th>
                 <th scope="col">
-                   <h3>|Cancellato|</h3> 
+                   <h3>Cancellato</h3> 
                 </th>
             </tr>
         </thead>
