@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="container">
+<h1 class="text-center py-5">Tabella Dei treni</h1>
+<div class="container py-5">
     <table class="table table-bordered">
         <thead>
             <tr>
